@@ -84,11 +84,6 @@ main {
 
 /* Featured Hero Section */
 .featured-hero {
-    background-image: url('featuredPageBackgroud.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
     text-align: center;
     padding: 4rem 2rem;
     color: #fff;

@@ -11,7 +11,7 @@ body {
     overflow-y: scroll; /* Ensure the page is scrollable */
 }
 
-header, main, footer {
+header, footer {
     background-color: rgba(0, 0, 0, 0.6); /* semi-transparent black background */
     padding: 1rem;
     border-radius: 10px; /* Optional: Add rounded corners */
@@ -40,11 +40,12 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-height: 70vh; /* Ensure main takes enough vertical space */
 }
 
 .hero {
     text-align: center;
-    margin-bottom: 2rem;
+    margin: auto;
 }
 
 .logo h1 {

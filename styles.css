@@ -12,9 +12,7 @@ body {
 }
 
 header, footer {
-    background-color: rgba(0, 0, 0, 0.6); /* semi-transparent black background */
     padding: 1rem;
-    border-radius: 10px; /* Optional: Add rounded corners */
     margin: 1rem; /* Optional: Add margin to space out sections */
 }
 
@@ -83,5 +81,4 @@ footer {
     position: relative; /* Ensure footer is scrollable */
     width: 100%;
     margin-top: auto;
-    border-radius: 10px; /* Optional: Add rounded corners */
 }

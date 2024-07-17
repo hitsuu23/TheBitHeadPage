@@ -82,48 +82,52 @@ main {
     font-weight: bold;
 }
 
-/* Featured Hero Section */
-.featured-hero {
+/* Aphorisms Button */
+.aphorisms-link {
+    margin-top: 2rem;
+}
+
+.aphorisms-button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: rgba(51, 51, 51, 0.8);
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* Aphorism Hero Section */
+.aphorism-hero {
     text-align: center;
     padding: 4rem 2rem;
     color: #fff;
 }
 
-.featured-posts {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2rem;
+.aphorism-section {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: rgba(51, 51, 51, 0.8);
+    border-radius: 5px;
     max-width: 800px;
     margin: auto;
 }
 
-.featured-posts .post {
-    background-color: transparent;
-    padding: 1rem;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+.aphorism-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
 }
 
-.featured-posts .post img {
-    max-width: 100%;
-    border-radius: 5px;
+.aphorism {
+    margin-bottom: 1rem;
 }
 
-.featured-posts .post h2 {
-    margin: 1rem 0;
-}
-
-.featured-posts .post p {
-    margin: 0.5rem 0;
-}
-
-.featured-posts .post .read-more {
-    margin-top: 1rem;
-    color: #fff;
-    text-decoration: underline;
+.aphorism p {
+    margin: 0;
+    padding: 0;
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #ccc;
 }
 
 /* Footer */

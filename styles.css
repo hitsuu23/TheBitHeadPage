@@ -105,17 +105,8 @@ main {
 }
 
 .aphorism-section {
-    margin-top: 2rem;
-    padding: 1rem;
-    background-color: rgba(51, 51, 51, 0.8);
-    border-radius: 5px;
     max-width: 800px;
     margin: auto;
-}
-
-.aphorism-section h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
 }
 
 .aphorism {

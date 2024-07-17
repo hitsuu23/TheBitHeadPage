@@ -1,0 +1,95 @@
+body {
+    background-image: url('MAinbackgroundImage.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: 'UnifrakturMaguntia', cursive;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+header, main, footer {
+    background-color: rgba(0, 0, 0, 0.7); /* semi-transparent black background */
+    padding: 1rem;
+}
+
+header .logo h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.hero img {
+    max-width: 100%;
+    height: auto;
+}
+
+.hero p {
+    margin: 1rem 0;
+    max-width: 800px;
+    margin: auto;
+}
+
+.hero-buttons {
+    margin-top: 1rem;
+}
+
+.hero-buttons .enter-button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.icon-wrapper {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

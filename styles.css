@@ -87,6 +87,10 @@ main {
     text-align: center;
     padding: 4rem 2rem;
     color: #fff;
+    background-color: rgba(51, 51, 51, 0.8);
+    border-radius: 5px;
+    max-width: 800px;
+    margin: auto;
 }
 
 .featured-posts {

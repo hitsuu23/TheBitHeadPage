@@ -5,10 +5,10 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-    font-family: 'Cinzel', serif;
+    font-family: 'UnifrakturMaguntia', cursive;
     margin: 0;
     padding: 0;
-    color: #fff;
+    color: #00ff00; /* Green text for hacker aesthetic */
     overflow-y: scroll;
 }
 
@@ -16,7 +16,7 @@ body {
 header {
     position: sticky;
     top: 0;
-    background-color: rgba(51, 51, 51, 0.8); /* semi-transparent background */
+    background-color: rgba(0, 0, 0, 0.8); /* semi-transparent background */
     z-index: 1000;
     width: 100%;
     padding: 0.5rem;
@@ -38,14 +38,15 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #00ff00; /* Green text for hacker aesthetic */
     text-decoration: none;
     padding: 0.25rem 0.5rem;
     border-radius: 5px;
+    border: 1px solid #00ff00; /* Border for hacker aesthetic */
 }
 
 nav ul li a.active, nav ul li a:hover {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(0, 255, 0, 0.1); /* Green highlight for active/hover */
 }
 
 /* Typography */
@@ -89,8 +90,8 @@ a, button, .enter-button, .aphorisms-button, .read-more {
 }
 
 a:hover, button:hover, .enter-button:hover, .aphorisms-button:hover, .read-more:hover {
-    background-color: #fff;
-    color: #333;
+    background-color: #00ff00;
+    color: #000;
 }
 
 /* Featured Posts */
@@ -111,10 +112,11 @@ a:hover, button:hover, .enter-button:hover, .aphorisms-button:hover, .read-more:
     align-items: center;
     text-align: center;
     transition: background-color 0.3s, transform 0.3s;
+    border: 1px solid #00ff00; /* Border for hacker aesthetic */
 }
 
 .featured-posts .post:hover {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(0, 255, 0, 0.1);
     transform: translateY(-5px);
 }
 
@@ -132,10 +134,10 @@ footer {
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(51, 51, 51, 0.5); /* semi-transparent background */
+    background-color: rgba(0, 0, 0, 0.5); /* semi-transparent background */
     text-align: left;
     padding: 0.5rem;
-    color: #fff;
+    color: #00ff00; /* Green text for hacker aesthetic */
 }
 
 .footer-content {
@@ -143,9 +145,7 @@ footer {
 }
 
 footer nav ul {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
+    display: none; /* Remove the additional footer links */
 }
 
 /* Aphorisms Section */
@@ -159,12 +159,12 @@ footer nav ul {
     background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
     padding: 1rem;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 8px rgba(0, 255, 0, 0.3); /* Green shadow for hacker aesthetic */
     transition: background-color 0.3s, transform 0.3s;
 }
 
 .aphorism:hover {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(0, 255, 0, 0.1);
     transform: translateY(-5px);
 }
 
@@ -177,43 +177,16 @@ footer nav ul {
     text-align: center;
 }
 
-/* Contact Form */
-.contact-form {
-    max-width: 600px;
-    margin: 0 auto;
-    text-align: left;
+/* Email Link */
+.email-link {
+    color: #00ff00;
+    text-decoration: none;
+    border-bottom: 1px dashed #00ff00;
 }
 
-.contact-form label {
-    display: block;
-    margin: 0.25rem 0 0.1rem;
-}
-
-.contact-form input, .contact-form textarea {
-    width: 100%;
-    padding: 0.5rem;
-    margin-bottom: 0.5rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-family: 'Cinzel', serif;
-}
-
-.contact-form button {
-    display: block;
-    width: 100%;
-    padding: 0.5rem;
-    background-color: rgba(51, 51, 51, 0.8);
+.email-link:hover {
     color: #fff;
-    border: none;
-    border-radius: 5px;
-    font-family: 'Cinzel', serif;
-    font-size: 1rem;
-    cursor: pointer;
-}
-
-.contact-form button:hover {
-    background-color: #fff;
-    color: #333;
+    border-bottom-color: #fff;
 }
 
 /* Responsive Design */

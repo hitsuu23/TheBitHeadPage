@@ -1,11 +1,11 @@
 /* General Styles */
 body {
-    background-image: url('A_dark,_cyberpunk-themed_background_with_neon_gree.png');
+    background-image: url('MAinbackgroundImage.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-    font-family: 'UnifrakturMaguntia', cursive;
+    font-family: 'Cinzel', serif;
     margin: 0;
     padding: 0;
     color: #fff; /* White text */

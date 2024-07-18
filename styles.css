@@ -5,16 +5,24 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-    font-family: 'UnifrakturMaguntia', cursive;
+    font-family: 'Cinzel', serif;
     margin: 0;
     padding: 0;
     color: #fff;
     overflow-y: scroll;
 }
 
-header, footer {
-    padding: 1rem;
-    margin: 1rem;
+/* Header and Footer */
+header {
+    position: sticky;
+    top: 0;
+    background-color: rgba(51, 51, 51, 0.8); /* semi-transparent background */
+    z-index: 1000;
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0;
+    display: flex;
+    justify-content: center;
 }
 
 nav ul {
@@ -22,7 +30,7 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 nav ul li {
@@ -32,128 +40,132 @@ nav ul li {
 nav ul li a {
     color: #fff;
     text-decoration: none;
+    padding: 0.25rem 0.5rem;
+    border-radius: 5px;
 }
 
-nav ul li a.active {
-    background-color: rgba(51, 51, 51, 0.8);
-    border-radius: 5px;
+nav ul li a.active, nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Typography */
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 1.75rem;
+    font-weight: 600;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.4;
 }
 
 /* Main Content */
 main {
-    padding: 2rem;
+    padding: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     min-height: 70vh;
 }
 
-.hero {
-    text-align: center;
-    margin: auto;
+.hero, .about-hero, .contact-hero, .featured-hero, .aphorism-hero {
+    padding: 2rem 1rem;
 }
 
-.logo h1 {
-    font-size: 5rem;
-    margin: 0;
-}
-
-.hero img {
-    max-width: 100%;
-    height: auto;
-}
-
-.hero p {
-    margin: 1rem 0;
+.hero p, .about-hero p, .contact-hero p, .featured-hero p, .aphorism-hero p {
+    margin: 0.5rem 0;
     max-width: 800px;
     margin: auto;
 }
 
-.hero-buttons {
-    margin-top: 1rem;
+/* Animations and Transitions */
+a, button, .enter-button, .aphorisms-button, .read-more {
+    transition: background-color 0.3s, color 0.3s;
 }
 
-.hero-buttons .enter-button {
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    background-color: rgba(51, 51, 51, 0.8);
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
+a:hover, button:hover, .enter-button:hover, .aphorisms-button:hover, .read-more:hover {
+    background-color: #fff;
+    color: #333;
 }
 
-/* Featured Hero Section */
-.featured-hero {
-    text-align: center;
-    padding: 4rem 2rem;
-    color: #fff;
-}
-
+/* Featured Posts */
 .featured-posts {
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
     max-width: 800px;
     margin: auto;
 }
 
 .featured-posts .post {
     background-color: transparent;
-    padding: 1rem;
+    padding: 0.5rem;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.featured-posts .post:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-5px);
 }
 
 .featured-posts .post h2 {
-    margin: 1rem 0;
-}
-
-.featured-posts .post p {
     margin: 0.5rem 0;
 }
 
-.featured-posts .post .read-more {
-    margin-top: 1rem;
-    color: #fff;
-    text-decoration: underline;
+.featured-posts .post p {
+    margin: 0.25rem 0;
 }
 
-/* Aphorisms Button */
-.aphorisms-link {
-    margin-top: 2rem;
-}
-
-.aphorisms-button {
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    background-color: rgba(51, 51, 51, 0.8);
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-}
-
-/* Aphorism Hero Section */
-.aphorism-hero {
-    text-align: center;
-    padding: 4rem 2rem;
+/* Footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(51, 51, 51, 0.5); /* semi-transparent background */
+    text-align: left;
+    padding: 0.5rem;
     color: #fff;
 }
 
+.footer-content {
+    margin-left: 0.5rem;
+}
+
+footer nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/* Aphorisms Section */
 .aphorism-section {
     max-width: 800px;
     margin: auto;
 }
 
 .aphorism {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
-    padding: 1.5rem;
+    padding: 1rem;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.aphorism:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-5px);
 }
 
 .aphorism p {
@@ -165,18 +177,61 @@ main {
     text-align: center;
 }
 
-/* Footer */
-footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgba(51, 51, 51, 0.5); /* semi-transparent background */
+/* Contact Form */
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
     text-align: left;
-    padding: 1rem;
-    color: #fff;
 }
 
-.footer-content {
-    margin-left: 1rem;
+.contact-form label {
+    display: block;
+    margin: 0.25rem 0 0.1rem;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Cinzel', serif;
+}
+
+.contact-form button {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    background-color: rgba(51, 51, 51, 0.8);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Cinzel', serif;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .logo h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    .featured-posts {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-content {
+        text-align: center;
+        margin: 0;
+    }
 }

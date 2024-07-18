@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-    background-image: url('MAinbackgroundImage.jpg');
+    background-image: url('A_dark,_cyberpunk-themed_background_with_neon_gree.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -8,7 +8,7 @@ body {
     font-family: 'UnifrakturMaguntia', cursive;
     margin: 0;
     padding: 0;
-    color: #00ff00; /* Green text for hacker aesthetic */
+    color: #fff; /* White text */
     overflow-y: scroll;
 }
 
@@ -38,15 +38,15 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #00ff00; /* Green text for hacker aesthetic */
+    color: #fff; /* White text */
     text-decoration: none;
     padding: 0.25rem 0.5rem;
     border-radius: 5px;
-    border: 1px solid #00ff00; /* Border for hacker aesthetic */
+    border: 1px solid #fff; /* Border for hacker aesthetic */
 }
 
 nav ul li a.active, nav ul li a:hover {
-    background-color: rgba(0, 255, 0, 0.1); /* Green highlight for active/hover */
+    background-color: rgba(255, 255, 255, 0.1); /* White highlight for active/hover */
 }
 
 /* Typography */
@@ -90,7 +90,7 @@ a, button, .enter-button, .aphorisms-button, .read-more {
 }
 
 a:hover, button:hover, .enter-button:hover, .aphorisms-button:hover, .read-more:hover {
-    background-color: #00ff00;
+    background-color: #fff;
     color: #000;
 }
 
@@ -112,11 +112,11 @@ a:hover, button:hover, .enter-button:hover, .aphorisms-button:hover, .read-more:
     align-items: center;
     text-align: center;
     transition: background-color 0.3s, transform 0.3s;
-    border: 1px solid #00ff00; /* Border for hacker aesthetic */
+    border: 1px solid #fff; /* Border for hacker aesthetic */
 }
 
 .featured-posts .post:hover {
-    background-color: rgba(0, 255, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.1);
     transform: translateY(-5px);
 }
 
@@ -137,7 +137,7 @@ footer {
     background-color: rgba(0, 0, 0, 0.5); /* semi-transparent background */
     text-align: left;
     padding: 0.5rem;
-    color: #00ff00; /* Green text for hacker aesthetic */
+    color: #fff; /* White text */
 }
 
 .footer-content {
@@ -159,12 +159,12 @@ footer nav ul {
     background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
     padding: 1rem;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 255, 0, 0.3); /* Green shadow for hacker aesthetic */
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3); /* White shadow for hacker aesthetic */
     transition: background-color 0.3s, transform 0.3s;
 }
 
 .aphorism:hover {
-    background-color: rgba(0, 255, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.1);
     transform: translateY(-5px);
 }
 
@@ -179,14 +179,14 @@ footer nav ul {
 
 /* Email Link */
 .email-link {
-    color: #00ff00;
+    color: #fff;
     text-decoration: none;
-    border-bottom: 1px dashed #00ff00;
+    border-bottom: 1px dashed #fff;
 }
 
 .email-link:hover {
-    color: #fff;
-    border-bottom-color: #fff;
+    color: #000;
+    border-bottom-color: #000;
 }
 
 /* Responsive Design */

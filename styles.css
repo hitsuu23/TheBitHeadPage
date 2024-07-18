@@ -82,6 +82,45 @@ main {
     font-weight: bold;
 }
 
+/* Featured Hero Section */
+.featured-hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    color: #fff;
+}
+
+.featured-posts {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    max-width: 800px;
+    margin: auto;
+}
+
+.featured-posts .post {
+    background-color: transparent;
+    padding: 1rem;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.featured-posts .post h2 {
+    margin: 1rem 0;
+}
+
+.featured-posts .post p {
+    margin: 0.5rem 0;
+}
+
+.featured-posts .post .read-more {
+    margin-top: 1rem;
+    color: #fff;
+    text-decoration: underline;
+}
+
 /* Aphorisms Button */
 .aphorisms-link {
     margin-top: 2rem;
@@ -127,11 +166,17 @@ main {
 }
 
 /* Footer */
-.footer-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(51, 51, 51, 0.5); /* semi-transparent background */
+    text-align: left;
     padding: 1rem;
-    background-color: rgba(51, 51, 51, 0.8);
-    border-radius: 5px;
+    color: #fff;
+}
+
+.footer-content {
+    margin-left: 1rem;
 }

@@ -25,7 +25,7 @@ header {
     width: 100%;
     padding: 1rem 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
@@ -36,6 +36,10 @@ nav ul {
     display: flex;
     justify-content: center;
     gap: 2rem;
+}
+
+nav ul li {
+    display: inline;
 }
 
 nav ul li a {
@@ -95,8 +99,19 @@ main {
     text-align: center;
 }
 
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
 .hero p, .about-hero p, .contact-hero p, .featured-hero p, .aphorism-hero p {
     margin: 1rem 0;
+}
+
+.dynamic-text {
+    margin-top: 1rem;
 }
 
 /* Buttons */

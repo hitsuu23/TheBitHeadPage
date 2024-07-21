@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About - The Bit Head</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -21,10 +21,8 @@
     <main>
         <section class="about-hero">
             <div class="content-center">
-                <h1>About The Bit Head</h1>
-                <p>The Bit Head – I guess I am a person? Honestly, there's not much else you need to know about me. I've been doing this for 15 years, and you would think I'd be much better by now. My specialty lies in low-level development, particularly kernel drivers designed to manipulate the virtual memory of processes.</p>
-                <p>My journey began with developing cheats for Counter-Strike, and over time, I've moved on to tackling games protected by EasyANTICHEAT. This isn't just work; it's what I do for fun. It's a side project for an aspiring pentester.</p>
-                <p>Currently, I'm pursuing a degree in computer engineering and mathematics. There's a famous saying: the best way to learn something is to teach it. And that's precisely what I'm doing here.</p>
+                <h1>About Us</h1>
+                <p>Welcome to The Bit Head, a place for hackers, coders, and tech enthusiasts. Our mission is to provide you with the latest insights, tips, and tutorials on cybersecurity, programming, and all things tech. Whether you're a beginner or an expert, we have something for everyone.</p>
             </div>
         </section>
     </main>
@@ -34,20 +32,6 @@
         </div>
     </footer>
     <button id="scroll-to-top" onclick="scrollToTop()">↑</button>
-    <script>
-        // Scroll to top functionality
-        window.onscroll = function() {scrollFunction()};
-        function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                document.getElementById("scroll-to-top").style.display = "block";
-            } else {
-                document.getElementById("scroll-to-top").style.display = "none";
-            }
-        }
-        function scrollToTop() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
-    </script>
+    <script src="js/scripts.js"></script>
 </body>
 </html>

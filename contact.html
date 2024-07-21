@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - The Bit Head</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -33,20 +33,6 @@
         </div>
     </footer>
     <button id="scroll-to-top" onclick="scrollToTop()">↑</button>
-    <script>
-        // Scroll to top functionality
-        window.onscroll = function() {scrollFunction()};
-        function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                document.getElementById("scroll-to-top").style.display = "block";
-            } else {
-                document.getElementById("scroll-to-top").style.display = "none";
-            }
-        }
-        function scrollToTop() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
-    </script>
+    <script src="js/scripts.js"></script>
 </body>
 </html>

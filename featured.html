@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Featured Posts - The Bit Head</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -28,7 +28,11 @@
                         <p>KDMapper is a powerful tool used to load unsigned drivers into Windows systems. This can be particularly useful for developers and security researchers who need to test and debug drivers without going through the driver signing process. Here's a step-by-step guide on how to use KDMapper to load your unsigned drivers.</p>
                         <a href="kdmapper.html" class="read-more">Read more</a>
                     </article>
-                    <!-- Add more posts as needed -->
+                    <article class="post">
+                        <h2>Learn C/C++ to Become a Hacker</h2>
+                        <p>The first step in learning to become a hacker is learning C/C++. C/C++ will teach you how to program and understand what's going on at a low level. Once you master these languages, every other language becomes more accessible due to their low-level nature. With AI taking over, knowing the syntax of a language is less important. What matters is understanding what each line of code does down to the register.</p>
+                        <a href="learn-cc.html" class="read-more">Read more</a>
+                    </article>
                 </div>
                 <div class="aphorisms-link">
                     <a href="aphorisms.html" class="aphorisms-button">Read Aphorisms</a>
@@ -42,20 +46,6 @@
         </div>
     </footer>
     <button id="scroll-to-top" onclick="scrollToTop()">↑</button>
-    <script>
-        // Scroll to top functionality
-        window.onscroll = function() {scrollFunction()};
-        function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                document.getElementById("scroll-to-top").style.display = "block";
-            } else {
-                document.getElementById("scroll-to-top").style.display = "none";
-            }
-        }
-        function scrollToTop() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
-    </script>
+    <script src="js/scripts.js"></script>
 </body>
 </html>

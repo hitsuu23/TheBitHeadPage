@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Bit Head</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
-    <meta name="description" content="0100110 01101100 01111001111001 01110011">
-    <meta name="keywords" content="cyber, rats, hacking">
+    <meta name="description" content="The Bit Head - A Hub for Hackers, Coders, and Tech Enthusiasts">
+    <meta name="keywords" content="cybersecurity, hacking, programming, coding, tech">
+    <meta name="author" content="The Bit Head">
 </head>
 <body>
     <header>
@@ -17,6 +18,7 @@
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="featured.html">Featured</a></li>
+                <li><input type="search" placeholder="Search..." aria-label="Search through site content"></li>
             </ul>
         </nav>
     </header>
@@ -43,20 +45,7 @@
         </div>
     </footer>
     <button id="scroll-to-top" onclick="scrollToTop()">↑</button>
-    <script>
-        // Scroll to top functionality
-        window.onscroll = function() {scrollFunction()};
-        function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                document.getElementById("scroll-to-top").style.display = "block";
-            } else {
-                document.getElementById("scroll-to-top").style.display = "none";
-            }
-        }
-        function scrollToTop() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
-    </script>
+    <div id="loading-spinner"></div>
+    <script src="js/scripts.js"></script>
 </body>
 </html>
